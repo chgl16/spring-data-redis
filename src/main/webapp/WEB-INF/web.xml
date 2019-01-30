@@ -69,6 +69,6 @@
     <!--Servlet拦截匹配规则可以自已定义，当映射为@RequestMapping("/user/add")时，为例,拦截哪种URL合适？-->
     <!--1、拦截*.do、*.htm， 例如：/user/add.do,这是最传统的方式，最简单也最实用。不会导致静态文件（jpg,js,css）被拦截。-->
     <!--2、拦截/，例如：/user/add,可以实现现在很流行的REST风格。很多互联网类型的应用很喜欢这种风格的URL。弊端：会导致静态文件（jpg,js,css）被拦截后不能正常显示。 -->
-    <url-pattern>/</url-pattern> <!--会拦截URL中带“/”的请求。-->
+    <url-pattern>*.do</url-pattern> <!--会拦截URL中带“/”的请求。-->
   </servlet-mapping>
 </web-app>
